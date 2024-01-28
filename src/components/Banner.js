@@ -75,7 +75,7 @@ const BannerRowTop = ({ title }) => {
         }}
         className='row-col'>
         <span className='row-message'>
-          It's a lovely way to celebrate or welcome a child into the family, usually inviting relations and friends to share in the occasion.
+        It's a joyous way to celebrate and welcome a child into the family, extending a warm invitation to relatives and friends to share in the special occasion of the naming ceremony.!
         </span>
       </motion.div>
     </div>
