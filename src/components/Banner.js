@@ -32,9 +32,12 @@ const Banner = () => {
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={"brand"} />
-      <BannerRowCenter title={"experience"} playMarquee={playMarquee} />
-      <BannerRowBottom title={"studio"} />
+      <BannerRowTop title={"Invites"} />
+      <BannerRowCenter title={"You_to_naming_ceremony_on_11th"} playMarquee={playMarquee} />
+      <BannerRowBottom title={"Baby'Boy!"} />
+      <div className="container ">
+        <a href="/" className="buttonnxt">Click Here For More detail</a>
+      </div>
     </motion.div>
   );
 };
@@ -72,8 +75,7 @@ const BannerRowTop = ({ title }) => {
         }}
         className='row-col'>
         <span className='row-message'>
-          We are specialised in setting up the foundation of your brand and
-          setting you up for success.
+          It's a lovely way to celebrate or welcome a child into the family, usually inviting relations and friends to share in the occasion.
         </span>
       </motion.div>
     </div>
@@ -96,7 +98,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          scroll
+          We
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
@@ -106,7 +108,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          down
+          Welocome's u
         </motion.span>
       </motion.div>
       <AnimatedLetters title={title} />

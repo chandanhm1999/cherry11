@@ -7,7 +7,8 @@
     align-items: center;
     @media (max-width: $layout-breakpoint-medium) {
       &:first-child {
-        margin-top: 48px;
+        margin-top: 58px;
+        white-space: 20px;
       }
     }
     &.center {
@@ -22,14 +23,14 @@
     }
     .row-title,
     .row-letter {
-      font-size: 28rem;
+      font-size: 20rem;
       font-weight: 500;
       position: relative;
       letter-spacing: -0.8rem;
       display: inline-block;
       white-space: nowrap;
       @media (max-width: $layout-breakpoint-xsmall) {
-        font-size: 13rem;
+        font-size: 8rem;
       }
     }
     .row-col {
@@ -114,4 +115,52 @@
       max-width: 100%;
     }
   }
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttonnxt {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #fd4322, #ff8c00);
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.buttonnxt::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: width 0.3s, opacity 0.3s;
+}
+
+.buttonnxt:hover {
+  background: linear-gradient(to right, #4d0db4, #ff6347);
+  transform: scale(1.1);
+}
+
+.buttonnxt:hover::before {
+  width: 100%;
+  opacity: 1;
 }

@@ -13,26 +13,14 @@ const Header = () => {
       }}
       className='header'>
       <div className='header-inner'>
-        <div className='logo'>Ollie</div>
+        <div className='logo'>ॐ</div>
         <nav className='nav'>
           <li>
-            <a href='/design'>Design</a>
-          </li>
-          <li>
-            <a href='/strategy'>Strategy</a>
-          </li>
-          <li>
-            <a href='/cases'>Cases</a>
-          </li>
-          <li>
-            <a href='/about'>About</a>
-          </li>
-          <li>
-            <a href='/why'>Why work with us?</a>
+            <a href='/home'>Home</a>
           </li>
         </nav>
         <div className='contact'>
-          <a href='/contact'>Let's work together</a>
+          <a href='/contact'>Mr Deepak & Mrs Nanditha</a>
         </div>
         <div className='hamburger-menu'>
           <span></span>
