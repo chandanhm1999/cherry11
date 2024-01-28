@@ -32,8 +32,8 @@ const Banner = () => {
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={"Invites"} />
-      <BannerRowCenter title={"You_to_naming_ceremony_on_11th"} playMarquee={playMarquee} />
+      <BannerRowTop title={"Join Us"} />
+      <BannerRowCenter title="for&nbsp;a&nbsp;Special&nbsp;Event&nbsp;Naming&nbsp;Ceremony&nbsp;on&nbsp;the&nbsp;11th&nbsp;Feb" playMarquee={playMarquee} />
       <BannerRowBottom title={"Baby'Boy!"} />
       <div className="container ">
         <a href="/" className="buttonnxt">Click Here For More detail</a>
@@ -98,7 +98,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          We
+          Welcoming
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
@@ -108,7 +108,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          Welocome's u
+          our
         </motion.span>
       </motion.div>
       <AnimatedLetters title={title} />
